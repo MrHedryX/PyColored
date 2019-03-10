@@ -13,4 +13,4 @@ pip install PyColored
 
 ## Documentation
 
-Please visit Documentation page on wiki.
+WIP
