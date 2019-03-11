@@ -1,6 +1,6 @@
 #RGB
 #################################################################
-def RGB(text, R, G, B):
+def rgb(text, R, G, B):
     if R > 255 or R < 0 or G > 255 or G < 0 or B > 255 or B < 0:
         raise ValueError(f'''
         Invalid RGB value at string: {italic(text)}
@@ -8,7 +8,7 @@ def RGB(text, R, G, B):
         ''')
     else:
         return f'\033[38;2;{R};{G};{B}m' + text + '\033[0m'
-def RGBBgr(text, R, G, B):
+def rgbBgr(text, R, G, B):
     if R > 255 or R < 0 or G > 255 or G < 0 or B > 255 or B < 0:
         raise ValueError(f'''
         Invalid RGB value at string: {italic(text)}
@@ -32,7 +32,7 @@ def slowblink(text):
     return '\033[5m' + text + '\033[0m'
 def rapidblink(text):
     return '\033[6m' + text + '\033[0m'
-def swap(text):
+def inverse(text):
     return '\033[7m' + text + '\033[0m'
 def conceal(text):
     return '\033[8m' + text + '\033[0m'
@@ -58,7 +58,7 @@ def blue(text):
     return '\033[34m' + text + '\033[0m'
 def purple(text):
     return '\033[35m' + text + '\033[0m'
-def darkcyan(text):
+def cyan(text):
     return '\033[36m' + text + '\033[0m'
 def white(text):
     return '\033[37m' + text + '\033[0m'
@@ -74,7 +74,7 @@ def blueBgr(text):
     return '\033[44m' + text + '\033[0m'
 def purpleBgr(text):
     return '\033[45m' + text + '\033[0m'
-def darkcyanBgr(text):
+def cyanBgr(text):
     return '\033[46m' + text + '\033[0m'
 def whiteBgr(text):
     return '\033[47m' + text + '\033[0m'

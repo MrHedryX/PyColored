@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="PyColored",
-    version="1.0",
+    version="1.0.2",
     author="Patrik Repan",
     author_email="repan.patrik.dev@gmail.com",
     description="Awesome Python package that allows you to format and color your text!",
